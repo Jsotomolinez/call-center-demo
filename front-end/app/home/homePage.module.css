@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.section {
+    display: flex;
+    gap: 10px;
+}
+
+.feedback {
+    background-color: var(--section-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.forms {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}

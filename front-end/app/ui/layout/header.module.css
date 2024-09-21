@@ -1,0 +1,51 @@
+.header {
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px 5px 25px;
+}
+
+.nav > * {
+    /* For development only */
+    /* background-color: blueviolet; */
+    font-size: x-large;
+}
+
+.logo {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo > p {
+    padding-right: 20px;
+}
+
+.search {
+    border-radius: 20px;
+    height: auto;
+    width: 500px;
+}
+
+.utilities {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.utilities > li {
+    padding-left: 25px;
+}

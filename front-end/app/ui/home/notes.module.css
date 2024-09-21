@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.title {
+    color: var(--light-font-color);
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    padding: 15px;
+    height: inherit;
+}
+
+.textArea {
+    resize: none;
+    margin-right: 10px;
+    background-color: var(--background);
+    color: var(--dark-font-color);
+    border-radius: 10px;
+    padding: 5px;
+    height: inherit;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.element {
+    background-color: var(--tertiary-color);
+    color: var(--light-font-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    background-color: var(--background);
+    color: var(--dark-font-color);
+    border-radius: 10px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
