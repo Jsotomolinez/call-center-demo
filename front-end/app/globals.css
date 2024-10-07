@@ -10,6 +10,7 @@
   --section-background-color: #a3c3bc;
   --light-font-color: #f1f5f5;
   --dark-font-color: #030e0e;
+  --focus-input-color: #084d75;
 }
 
 /* @media (prefers-color-scheme: dark) {

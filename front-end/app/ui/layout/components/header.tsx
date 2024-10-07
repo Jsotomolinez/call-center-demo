@@ -1,8 +1,12 @@
-import styles from './header.module.css'
+
+import styles from '../styles/header.module.css'
+
 import Link from 'next/link'
-import { Phone, Bell, Options, User } from '../icons'
-import DarkModeSwitch from '../buttons'
-import SearchBar from '../searchBar'
+// import Image from 'next/image'
+
+import { Phone, Bell, Options, User } from '../../gadjets/components/icons'
+import DarkModeSwitch from '../../gadjets/components/buttons'
+import SearchBar from '../../gadjets/components/searchBar'
 
 export default function Header() {
   return (
@@ -11,11 +15,13 @@ export default function Header() {
         <div className={styles.logo}>
           <Link 
             href='/home'>
-                ☎️
-          </Link>
-          <Link 
-            href='/home'>
-                Home
+              {/* <Image
+                src='@\public\1n2(3).png'
+                alt='App logo'
+                width={10}
+                height={10}
+              /> */}
+              Home
           </Link>
         </div>
         
@@ -24,28 +30,31 @@ export default function Header() {
         </div>
 
         <ul className={styles.utilities}>
-            <li>
+            <li className={styles.link}>
                 <Link
                     href='/home/make-a-call'>
                         <Phone />
                 </Link>
             </li>
-            <li>
+            <li className={styles.link}>
                 <Link
                     href='/home/reminders'>
                         <Bell />
                 </Link>
             </li>
-            <li>
+
+            <li className={styles.link}>
                 <Link
                     href='/home/options'>
                         <Options />
                 </Link>
             </li>
-            <li>
+
+            <li className={styles.link}>
                 <DarkModeSwitch />
             </li>
-            <li>
+            
+            <li className={styles.link}>
                 <Link
                     href='/home/user'>
                         <User />

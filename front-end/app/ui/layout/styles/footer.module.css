@@ -3,8 +3,9 @@
     bottom: 0;
     left: 0; */
     background-color: var(--primary-color);
-    width: 100vw;
+    width: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 200px;

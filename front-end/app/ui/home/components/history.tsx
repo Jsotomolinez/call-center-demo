@@ -1,13 +1,9 @@
-import styles from './history.module.css'
+import { DateTimeType } from '@/app/definitions'
+import styles from '../styles/history.module.css'
 
-export default function CallsHistory() {
-  const calls = [
-    {date: '12/06/2024', time: '1600'},
-    {date: '12/06/2024', time: '1600'},
-    {date: '12/06/2024', time: '1600'},
-    {date: '12/06/2024', time: '1600'},
-    {date: '12/06/2024', time: '1600'}
-  ]
+export default function CallsHistory(
+  {calls}: {calls: DateTimeType[]}
+) {
 
   return (
     <div className={styles.container}>
@@ -21,7 +17,7 @@ export default function CallsHistory() {
                 key={index}
                 className={styles.element}
                 >
-                {call.date} {call.time}
+                <strong>Date: </strong>{call.date}, <strong>Time: </strong>{call.time}
               </li>
             ))
           }

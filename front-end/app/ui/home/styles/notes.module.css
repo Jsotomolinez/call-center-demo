@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
-    width: fit-content;
-    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    justify-content: start;
     align-items: center;
     border-radius: 20px;
     margin-left: 10px;
+    
 }
 
 .title {
@@ -16,9 +18,13 @@
 }
 
 .content {
-    display: flex;
-    padding: 15px;
-    height: inherit;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
 }
 
 .textArea {
@@ -28,7 +34,12 @@
     color: var(--dark-font-color);
     border-radius: 10px;
     padding: 5px;
-    height: inherit;
+    height: 100%;
+    border: var(--tertiary-color) 5px solid;
+}
+
+.textArea:focus {
+    border: var(--focus-input-color) 5px solid;
 }
 
 .questions {
@@ -38,21 +49,24 @@
 }
 
 .element {
-    background-color: var(--tertiary-color);
+    all: unset;
     color: var(--light-font-color);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 
 .input {
+    border: var(--tertiary-color) 5px solid;
     background-color: var(--background);
     color: var(--dark-font-color);
-    border-radius: 10px;
-    margin-left: 5px;
-    padding-left: 5px;
+    height: 34px;
+    width: 100%;
+    border-radius: 16px;
+    padding-left: 10px;
+}
+
+.input:focus {
+    border: var(--focus-input-color) 5px solid;
 }

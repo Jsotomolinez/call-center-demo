@@ -1,6 +1,6 @@
 .header {
     background-color: var(--primary-color);
-    width: 100vw;
+    width: auto;
     height: 50px;
     position: sticky;
     top: 0;
@@ -17,8 +17,7 @@
 }
 
 .nav > * {
-    /* For development only */
-    /* background-color: blueviolet; */
+    /* Fix this */
     font-size: x-large;
 }
 
@@ -46,6 +45,18 @@
     align-items: center;
 }
 
-.utilities > li {
-    padding-left: 25px;
+.link {
+    margin-left: 25px;
+    padding: 6px;
+    color: var(--dark-font-color);
+    transition: all ease-in 0.2s;
+    border-radius: 100px;
+}
+
+.link:hover, .link:focus {
+    /* focus pseudo class does not work as intended, if i give styles to de Link
+    element it works but the display breaks */
+    color: var(--light-font-color);
+    background-color: var(--tertiary-color);
+    box-shadow: 2px 2px 5px var(--tertiary-color);
 }

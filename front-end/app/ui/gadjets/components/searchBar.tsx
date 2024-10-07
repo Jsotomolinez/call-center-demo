@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Search } from './icons'
-import styles from './searchBar.module.css'
+import styles from '../styles/searchBar.module.css'
 
 export default function SearchBar() {
   const [searchQuery, setSearchQuery] = useState('')
@@ -14,7 +14,7 @@ export default function SearchBar() {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.searchBar}>
           <input
             type="text"

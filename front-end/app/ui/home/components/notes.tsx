@@ -1,4 +1,4 @@
-import styles from './notes.module.css'
+import styles from '../styles/notes.module.css'
 
 export default function Notes() {
   const options = [
@@ -16,6 +16,7 @@ export default function Notes() {
         <div className={styles.content}>
           <textarea
             name="general notes"
+            placeholder='General notes'
             className={styles.textArea}
             ></textarea>
           <ul className={styles.questions}>
@@ -24,7 +25,9 @@ export default function Notes() {
                 <li
                   key={option}
                   className={styles.element}>
-                  <label htmlFor={option}>{option}</label>
+                  <label htmlFor={option}>
+                    <strong>{option}:</strong>
+                    </label>
                   <input type="text"
                     name={option}
                     className={styles.input}/>
