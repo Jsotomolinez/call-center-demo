@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-background-color);
+    height: 75vh;
+    width: 25vw;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.title {
+    color: var(--dark-font-color);
+    font-weight: bolder;
+}
+
+.element {
+    background-color: var(--tertiary-color);
+    color: var(--light-font-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    border-radius: 100px;
+}

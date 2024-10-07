@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border: var(--tertiary-color) 4px solid;
+    box-shadow: 2px 2px 5px var(--tertiary-color);
+    border-radius: 10px;
+    gap: 2px;
+}
+
+.radioContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.radioContainer label {
+    margin-right: 5px;
+}

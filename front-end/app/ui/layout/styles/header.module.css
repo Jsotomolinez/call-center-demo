@@ -1,0 +1,62 @@
+.header {
+    background-color: var(--primary-color);
+    width: auto;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px 5px 25px;
+}
+
+.nav > * {
+    /* Fix this */
+    font-size: x-large;
+}
+
+.logo {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo > p {
+    padding-right: 20px;
+}
+
+.search {
+    border-radius: 20px;
+    height: auto;
+    width: 500px;
+}
+
+.utilities {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    margin-left: 25px;
+    padding: 6px;
+    color: var(--dark-font-color);
+    transition: all ease-in 0.2s;
+    border-radius: 100px;
+}
+
+.link:hover, .link:focus {
+    /* focus pseudo class does not work as intended, if i give styles to de Link
+    element it works but the display breaks */
+    color: var(--light-font-color);
+    background-color: var(--tertiary-color);
+    box-shadow: 2px 2px 5px var(--tertiary-color);
+}

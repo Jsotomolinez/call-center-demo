@@ -1,0 +1,45 @@
+.button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--light-font-color);
+    font-weight: bolder;
+    border-radius: 50px;
+    border: var(--tertiary-color) 5px solid;
+    box-shadow: 2px 3px 5px var(--tertiary-color);
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+    height: 50px;
+    min-width: 75px;
+}
+
+.button:hover, .button:focus{
+    background-color: var(--tertiary-color);
+}
+
+.button span {
+    padding: 10px;
+}
+
+.callStateButton {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-font-color);
+    font-weight: bolder;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: var(--tertiary-color) 4px solid;
+    box-shadow: 2px 2px 5px var(--tertiary-color);
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+}
+
+.callStateButton:hover, .callStateButton:focus{
+    background-color: var(--tertiary-color);
+    color: var(--light-font-color);
+}

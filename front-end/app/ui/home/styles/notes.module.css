@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 10px;
+    
+}
+
+.title {
+    color: var(--light-font-color);
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+}
+
+.textArea {
+    resize: none;
+    margin-right: 10px;
+    background-color: var(--background);
+    color: var(--dark-font-color);
+    border-radius: 10px;
+    padding: 5px;
+    height: 100%;
+    border: var(--tertiary-color) 5px solid;
+}
+
+.textArea:focus {
+    border: var(--focus-input-color) 5px solid;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.element {
+    all: unset;
+    color: var(--light-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.input {
+    border: var(--tertiary-color) 5px solid;
+    background-color: var(--background);
+    color: var(--dark-font-color);
+    height: 34px;
+    width: 100%;
+    border-radius: 16px;
+    padding-left: 10px;
+}
+
+.input:focus {
+    border: var(--focus-input-color) 5px solid;
+}
