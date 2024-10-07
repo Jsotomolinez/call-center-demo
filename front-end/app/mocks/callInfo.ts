@@ -1,6 +1,7 @@
 import { CallInfoType } from "../definitions";
 
 export const callInfoMock: CallInfoType = {
+    row: 1,
     basicInfo: [
         {
             field: 'Phone',

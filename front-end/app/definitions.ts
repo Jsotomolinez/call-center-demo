@@ -17,6 +17,7 @@ export interface BasicInfoType {
 }
 
 export interface CallInfoType {
+  row: number,
   basicInfo: BasicInfoType[],
   notes: NoteType[],
   calls: DateTimeType[]
